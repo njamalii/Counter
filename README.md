@@ -20,10 +20,11 @@ Without using useCallback:
     } `
 
   Using useCallback:
+  
    	`///With using Callback
      const minusBtn = useCallback(() => {
-      setNum(num - 1);
-     }, [num]);
-     const addBtn = useCallback(() => {
-     setNum(num + 1);
-      }, [num]`
+    setNum(num - 1);
+    }, [num]);
+    const addBtn = useCallback(() => {
+    setNum(num + 1);
+    }, [num]);`
