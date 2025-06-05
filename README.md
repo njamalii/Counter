@@ -10,8 +10,9 @@ The part of the code  without using useCallback hook is commented.
 
 Without using useCallback:
 (**This part is commented in the code**)
- 	`// Without using Callback
-   function minusBtn() {
+
+ 	// Without using Callback
+  ` function minusBtn() {
      setNum(num - 1);
    }
    function addBtn() {
