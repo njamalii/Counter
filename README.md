@@ -28,3 +28,7 @@ Without using useCallback:
     const addBtn = useCallback(() => {
     setNum(num + 1);
     }, [num]);`
+
+**Before using useCallback and useState you must import them:**
+
+ 	`import { useCallback, useState } from 'react';`
