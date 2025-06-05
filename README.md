@@ -1,12 +1,29 @@
 # React + Vite
+---
+## Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple sample of counter.
 
-Currently, two official plugins are available:
+The code is written once without using useCallback hook and once using useCallback hook.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The part of the code  without using useCallback hook is commented.
 
-## Expanding the ESLint configuration
+Without using useCallback:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+(**This part is commented in the code**)
+ 	`// Without using Callback
+   function minusBtn() {
+     setNum(num - 1);
+   }
+   function addBtn() {
+     setNum(num + 1);
+  }`
+
+  Using useCallback:
+   	`///With using Callback
+  const minusBtn = useCallback(() => {
+    setNum(num - 1);
+  }, [num]);
+  const addBtn = useCallback(() => {
+    setNum(num + 1);
+  }, [num`
