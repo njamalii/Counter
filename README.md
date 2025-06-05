@@ -9,7 +9,6 @@ The code is written once without using useCallback hook and once using useCallba
 The part of the code  without using useCallback hook is commented.
 
 Without using useCallback:
-
 (**This part is commented in the code**)
  	`// Without using Callback
    function minusBtn() {
