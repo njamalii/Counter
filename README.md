@@ -1,8 +1,8 @@
 # React + Vite
 ---
-## Counter
+## Increase & Decrease button
 
-This is a simple sample of counter.
+This is a simple sample of Increase & Decrease button.
 
 The code is written once without using useCallback hook and once using useCallback hook.
 
